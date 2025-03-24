@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!--mq3c+k@_(ssu9mq!owz3d(#pim)korp!kj@r70g#__rxv6!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['incubiaform-production.up.railway.app']
 
 
 # Application definition
