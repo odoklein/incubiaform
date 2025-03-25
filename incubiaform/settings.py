@@ -29,7 +29,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['incubiaform.onrender.com/']
 
-
+print(f"ALLOWED_HOSTS: {ALLOWED_HOSTS}")
 # Application definition
 
 INSTALLED_APPS = [
