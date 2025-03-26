@@ -170,6 +170,7 @@
             <img src="{% static 'images/incubia.png' %}" alt="Incubia Logo">
         </div>
         <form method="post">
+                {% csrf_token %}
             <div class="form-container">
                 <div class="form-group">
                     <label for="{{ form.project_name.id_for_label }}">Nom de votre projet</label>
