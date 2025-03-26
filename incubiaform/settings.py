@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-!--mq3c+k@_(ssu9mq!owz3d(#pim)korp!kj@r70g#__rxv6!
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "incubiaform-oi31.onrender.com").split(",")
 
-ALLOWED_HOSTS = ['incubiaform-oi31.onrender.com']
 
 print(f"ALLOWED_HOSTS: {ALLOWED_HOSTS}")
 # Application definition
