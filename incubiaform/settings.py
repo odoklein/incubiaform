@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-!--mq3c+k@_(ssu9mq!owz3d(#pim)korp!kj@r70g#__rxv6!'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on in production!DEBUG = True
 DEBUG = True
-ALLOWED_HOSTS = ['incubiaform.onrender.com', 'incubiaform-oi31.onrender.com']
+ALLOWED_HOSTS = ['localhost', 'incubiaform-oi31.onrender.com']
+
 
 
 print(f"ALLOWED_HOSTS: {ALLOWED_HOSTS}")
@@ -89,8 +90,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 
-USE_X_FORWARDED_HOST = True
-ALLOWED_HOSTS = ['incubiaform.onrender.com']
+
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
