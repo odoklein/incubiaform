@@ -4,7 +4,7 @@ class RegistrationStep1(models.Model):
     full_name = models.CharField(max_length=255)
     email = models.EmailField()
     password = models.CharField(max_length=255)
-    phone_number = models.IntegerField()  # Modifier ici
+    phone_number = models.IntegerField()
     city = models.CharField(max_length=100)
     terms_accepted = models.BooleanField(default=False)
 
@@ -13,13 +13,12 @@ class RegistrationStep1(models.Model):
 
 class RegistrationStep2(models.Model):
     project_name = models.CharField(max_length=255)
-    project_level = models.CharField(max_length=255)  # Assurez-vous que la longueur est suffisante
+    project_level = models.CharField(max_length=255)
     description = models.TextField()
-    industry = models.CharField(max_length=255)  # Assurez-vous que la longueur est suffisante
+    industry = models.CharField(max_length=255)
 
     def __str__(self):
         return self.project_name
-    
 
 class RegistrationStep3(models.Model):
     CHOICES = (
@@ -29,9 +28,10 @@ class RegistrationStep3(models.Model):
         ('resources', 'Ressources'),
     )
     choice = models.CharField(max_length=20, choices=CHOICES, blank=True, null=True)
-    
+
     def __str__(self):
-        return "Expectations"  # Or you can customize this
+        return "Expectations"
+
 class User(models.Model):
     full_name = models.CharField(max_length=255)
     email = models.EmailField()
