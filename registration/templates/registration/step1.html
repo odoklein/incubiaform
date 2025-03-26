@@ -169,6 +169,7 @@
             <p class="description">Inscrivez-vous pour commencer votre <br> aventure entrepreneuriale.</p>
         </div>
         <form method="post">
+                {% csrf_token %}
             <div class="form-container">
                 <div class="form-group">
                     <label for="{{ form.full_name.id_for_label }}">Nom et prénom</label>
