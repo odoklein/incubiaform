@@ -32,3 +32,18 @@ class RegistrationStep3(models.Model):
     
     def __str__(self):
         return "Expectations"  # Or you can customize this
+class User(models.Model):
+    full_name = models.CharField(max_length=255)
+    email = models.EmailField()
+    password = models.CharField(max_length=255)
+    phone_number = models.IntegerField()
+    city = models.CharField(max_length=100)
+    terms_accepted = models.BooleanField(default=False)
+    project_name = models.CharField(max_length=255)
+    project_level = models.CharField(max_length=255)
+    description = models.TextField()
+    industry = models.CharField(max_length=255)
+    choice = models.CharField(max_length=20, blank=True, null=True)
+
+    def _str_(self):
+        return self.full_name
