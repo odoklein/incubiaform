@@ -18,7 +18,6 @@ X_FRAME_OPTIONS = "ALLOWALL"
 
 # If you want to allow only specific sites:
 # X_FRAME_OPTIONS = "SAMEORIGIN"  # Allows only the same domain
-CSRF_TRUSTED_ORIGINS = ['https://incubia-algerie.com', 'https://incubiaform-oi31.onrender.com']
 
 # If using Content Security Policy (CSP), allow your WordPress domain
 CSP_FRAME_ANCESTORS = ["https://incubia-algerie.com"]
