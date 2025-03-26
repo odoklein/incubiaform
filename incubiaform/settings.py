@@ -27,6 +27,8 @@ SECRET_KEY = 'django-insecure-!--mq3c+k@_(ssu9mq!owz3d(#pim)korp!kj@r70g#__rxv6!
 # SECURITY WARNING: don't run with debug turned on in production!DEBUG = True
 DEBUG = True
 ALLOWED_HOSTS = ['incubiaform-oi31.onrender.com']
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:8000", "incubiaform-oi31.onrender.com"]
+
 
 
 
