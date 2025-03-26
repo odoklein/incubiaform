@@ -13,6 +13,15 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os
 
+# Allow embedding on any site
+X_FRAME_OPTIONS = "ALLOWALL"
+
+# If you want to allow only specific sites:
+# X_FRAME_OPTIONS = "SAMEORIGIN"  # Allows only the same domain
+
+# If using Content Security Policy (CSP), allow your WordPress domain
+CSP_FRAME_ANCESTORS = ["https://incubia-algerie.com"]
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
