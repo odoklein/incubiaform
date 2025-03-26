@@ -45,5 +45,5 @@ class User(models.Model):
     industry = models.CharField(max_length=255)
     choice = models.CharField(max_length=20, blank=True, null=True)
 
-    def _str_(self):
+    def __str__(self):
         return self.full_name
