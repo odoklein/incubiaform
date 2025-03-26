@@ -179,7 +179,6 @@
             <h2 class="subtitle">Quelles sont vos attentes ?</h2>
         </div>
         <form method="post">
-            {% csrf_token %}
             <div class="form-container">
                 {% for radio in form.choice %}
                     <div class="form-group radio-container">
